@@ -5,6 +5,7 @@
   <title>Web Front end Developer</title>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/video-dev/clappr-rtmp-plugin@latest/dist/rtmp.min.js">
 </script><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.7/css/uikit.min.css'>
+<link rel='stylesheet' href='http://vjs.zencdn.net/5.8/video-js.min.css'>
 <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -59,7 +60,9 @@
 
 
 
-        <div id="player" class="uk-responsive uk-width-1-3 uk-margin-large-right "></div>
+        <video id="player" class="video-js vjs-default-skin" height="360" width="640" controls preload="none">
+    <source src="http://95.179.238.114:8080/live/stream.m3u8" />
+</video>
       </div>
 
 
@@ -96,6 +99,9 @@ One of my latest work that have been marked to productions and that i am very pr
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/clappr/0.3.8/clappr.min.js'></script>
 <script src='https://cdn.jsdelivr.net/gh/video-dev/clappr-rtmp-plugin@latest/dist/rtmp.min.js'></script>
+<script src='http://vjs.zencdn.net/5.8/video.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/video.js/7.6.4/video.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.15.0/videojs-contrib-hls.min.js'></script>
 <script  src="./script.js"></script>
 
 </body>

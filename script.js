@@ -22,8 +22,4 @@ $('.uk-list > li').on('click', function () {
     if (!$(this).hasClass('link'))
         $(element).text('');
 });
-var player = new Clappr.Player({
-    source: "rtmp://95.179.238.114/live/hainaku",
-    parentId: "#player",
-    plugins: { 'playback': [RTMP] }
-});
+var player = videojs('#player');
