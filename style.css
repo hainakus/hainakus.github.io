@@ -1,0 +1,134 @@
+@charset "UTF-8";
+html,
+body {
+  background: #FFF;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  color: #F5F5F5;
+  height: 100%;
+}
+
+.fill-height-or-more {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fill-height-or-more > div {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h3 {
+  margin-top: auto;
+  font-size: 7.5vw;
+  cursor: pointer;
+  color: #e5bbc9;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+div.description {
+  display: flex;
+  margin-top: auto;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: bottom;
+  vertical-align: bottom !important;
+  flex-wrap: wrap;
+}
+
+ul > li {
+  letter-spacing: 0.2px;
+  color: #F5F5F5 !important;
+  transition: transform 1s ease;
+  margin-bottom: auto;
+  cursor: pointer;
+}
+
+.link {
+  transform: translate(150px, 0px);
+}
+
+.link:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1.3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width 1.2s ease;
+  -webkit-transition: width .2s ease;
+}
+
+.link:hover:after {
+  width: 100%;
+  left: 0;
+  background: #fff;
+}
+
+h1 {
+  color: #F5F5F5 !important;
+}
+
+.uk-navbar-nav > li a, span {
+  color: #EDE7F6 !important;
+  font-size: 1.5rem;
+}
+
+#back {
+  /* background-color: rgba(255,255,255,1);
+   background-blend-mode: luminosity;*/
+  filter: brightness(90%) contrast(110%);
+  transition: background 1s linear;
+}
+
+.text-area {
+  text-align: left;
+  flex: 0 1 calc(2/5 * 100%);
+  margin-right: 160px !important;
+  font-size: 1.2vw;
+}
+
+.image-mask {
+  background-size: cover;
+  background-color: #ff00007d;
+  background-position: center;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.list {
+  list-style: none;
+}
+
+.list > li:nth-child(1) {
+  margin-top: 20% !important;
+  height: 33px;
+}
+.list > li:nth-child(1) img  {
+  object-fit: contain;
+}
+
+.list > li:nth-child(2) {
+  margin-top: 20% !important;
+  height: 33px;
+}
+.list > li:nth-child(2) img  {
+  object-fit: contain;
+}
+
+.list > li:nth-child(3) {
+  margin-top: -20% !important;
+  height: 33px;
+}
+.list > li:nth-child(3) img  {
+  object-fit: contain;
+}
