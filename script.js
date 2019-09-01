@@ -22,4 +22,3 @@ $('.uk-list > li').on('click', function () {
     if (!$(this).hasClass('link'))
         $(element).text('');
 });
-var player = videojs('#player');
