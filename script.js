@@ -25,7 +25,7 @@ $('.uk-list > li').on('click', function () {
 var video = document.getElementById('video');
 if (Hls.isSupported()) {
     var hls = new Hls();
-    hls.loadSource('http://95.179.238.114:8080/live/stream.m3u8');
+    hls.loadSource('https://gobideo.tk/live/stream.m3u8');
     hls.attachMedia(video);
     hls.on(Hls.Events.MANIFEST_PARSED, function () {
         video.play();
@@ -37,7 +37,7 @@ if (Hls.isSupported()) {
 // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
 // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
 else if (video.canPlayType('application/vnd.apple.mpegurl')) {
-    video.src = 'http://95.179.238.114:8080/live/stream.m3u8';
+    video.src = 'https://gobideo.tk/live/stream.m3u8';
     video.addEventListener('loadedmetadata', function () {
         video.play();
     });
